@@ -1,7 +1,21 @@
-# REPLACE WITH YOUR APP NAME
+# ElderlyEase🧑🏼‍🦳 
+This GitHub repository is dedicated to the development of an app that makes technology more accessible and easy to use for elderly people. The app aims to address the difficulties that older adults face in using appliances, enabling them to connect with loved ones and access healthcare services with greater ease. The app includes a hub of support for using appliances, and users can choose appliances from a list using QR codes to identify them. The app also includes a chatbot that provides written explanations and answers to questions that users may have about appliances. To make the app more user-friendly for elderly people, it includes a delay response of clicks to account for the time it takes them to process information, as well as confirmation questions to ensure that users are sure they want an explanation about a particular appliance. Our aim is to open an online store that will have all the appliances suitable for older adults. 
+
+
+This GitHub repository contains the source code for the app, as well as documentation and resources that developers may need to contribute to or use the project. By sharing this project on GitHub, we hope to enable other developers to contribute to making technology more accessible for older adults.
+
+
+
+First Sketches 
+
 
 This is the Final assessment template for CASA0014 - Please use this template and edit the relevant sections to personalise.
 This section has a short introduction to what the application is
+
+
+
+
+
 
 ## Use this README File 
 
