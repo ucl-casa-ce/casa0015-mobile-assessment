@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const CardExamplesApp());
 }
 
 class CardExamplesApp extends StatelessWidget {
-  const CardExamplesApp({super.key});
+  const CardExamplesApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +15,55 @@ class CardExamplesApp extends StatelessWidget {
           colorSchemeSeed: Color.fromARGB(255, 193, 71, 23),
           useMaterial3: true),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Elderlyease')),
-        body: Column(
-          children: const <Widget>[
-            Spacer(),
-            ElevatedCardExample(),
-            FilledCardExample(),
-            OutlinedCardExample(),
-            Spacer(),
-            IconRowExample()
-          ],
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomePage()),
+            );
+            // add onPressed callback here
+          },
+          child: const Icon(Icons.add),
+        ),
+        appBar: AppBar(
+          title: const Text('Elderlyease'),
+        ),
+        body: GridView.count(
+          crossAxisCount: 2, // 4 columns
+          children: List.generate(
+            12, // 6 rows x 4 columns = 24 buttons
+            (index) {
+              if (index == 0) {
+                return ElevatedButton(
+                  onPressed: () {},
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                          '/Users/giladda/Desktop/elderlyease/icon_images/Loaf_Of_Bread_In_An_Oven-512.webp',
+                          width: 140,
+                          height: 140),
+                      const SizedBox(height: 10),
+                      const Text('Button 1 My Oven button',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16)),
+                    ],
+                  ),
+                );
+              } else {
+                return ElevatedButton(
+                  onPressed: () {},
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const SizedBox(height: 8),
+                      Text('Button $index'),
+                    ],
+                  ),
+                );
+              }
+            },
+          ),
         ),
       ),
     );
