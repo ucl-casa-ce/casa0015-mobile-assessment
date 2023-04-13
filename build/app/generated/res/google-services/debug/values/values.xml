@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1062567518475-tgdf6k83dvnmeu23p83rag55lum4pbmu.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1062567518475</string>
+    <string name="google_api_key" translatable="false">AIzaSyAqPyNRR7rDzVUqrxb4A4InsEHWOxBTU8I</string>
+    <string name="google_app_id" translatable="false">1:1062567518475:android:ed16adf467939a280d820e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAqPyNRR7rDzVUqrxb4A4InsEHWOxBTU8I</string>
+    <string name="google_storage_bucket" translatable="false">elderlyease.appspot.com</string>
+    <string name="project_id" translatable="false">elderlyease</string>
+</resources>

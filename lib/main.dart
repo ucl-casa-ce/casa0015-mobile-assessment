@@ -40,7 +40,7 @@ class CardExamplesApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                          '/Users/giladda/Desktop/elderlyease/icon_images/Loaf_Of_Bread_In_An_Oven-512.webp',
+                          'icon_images/Loaf_Of_Bread_In_An_Oven-512.webp',
                           width: 140,
                           height: 140),
                       const SizedBox(height: 10),

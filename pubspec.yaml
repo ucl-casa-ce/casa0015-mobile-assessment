@@ -48,11 +48,12 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-flutter_launcher_icons: ^0.13.0
-assets:
-      assets/elderlyease_logo.png
+
 
 flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/elderlyease_logo.png"
 android: true
 
   # android: "launcher_icon"
@@ -85,8 +86,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - icon_images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
