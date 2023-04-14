@@ -1,6 +1,6 @@
 {
-    "name": "elderlyease",
-    "short_name": "elderlyease",
+    "name": "elderlyease_one",
+    "short_name": "elderlyease_one",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

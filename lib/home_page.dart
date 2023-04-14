@@ -1,53 +1,85 @@
+import 'dart:math';
+
+import 'package:elderlyease/appliance_model.dart';
+import 'package:elderlyease/appliance_process.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  // List<String> category = [
+  //   "Medicine",
+  //   "Food",
+  //   "Clothes",
+  //   "Shoes",
+  //   "Toys",
+  //   "Books",
+  //   "Electronics",
+  //   "Furniture",
+  //   "Sports",
+  //   "Others",
+  //   "TV"
+  // ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('My Home Page'),
-      ),
-      body: GridView.count(
-        primary: false,
-        padding: const EdgeInsets.all(20),
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        crossAxisCount: 2,
-        children: <Widget>[
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[100],
-            child: const Text("He'd have you all unravel at the"),
+        body: SafeArea(
+      child: Column(
+        children: [
+          Text(
+            "CHOOSE YOUR APPLIANCE",
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
           ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[200],
-            child: const Text('Heed not the rabble'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[300],
-            child: const Text('Sound of screams but the'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[400],
-            child: const Text('Who scream'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[500],
-            child: const Text('Revolution is coming...'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[600],
-            child: const Text('Revolution, they...'),
+          Divider(),
+          Expanded(
+            child: GridView.builder(
+                itemCount: category.length,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10),
+                itemBuilder: (context, index) {
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AppianceProcess(
+                                    mainTitle: category[index].title,
+                                  )));
+                    },
+                    child: Card(
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            color: Colors.primaries[
+                                Random().nextInt(Colors.primaries.length)],
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              category[index].image!,
+                              height: 70,
+                              width: 70,
+                              fit: BoxFit.contain,
+                            ),
+                            Text(
+                              category[index].title!,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                }),
           ),
         ],
       ),
-    );
+    ));
   }
 }
