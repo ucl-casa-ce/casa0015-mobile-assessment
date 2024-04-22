@@ -1,46 +1,81 @@
-<!---
 
----
-title: "CASA0017: Web Architecture Final Assessment"
-author: "Steven Gray"
-date: "10 Dec 2021"
----
+title: "CASA0015: Mobile System Final Assessment"
 
--->
 
-# Submission Guide
+author: "Xincen Xu"
 
-You will need to edit this file, create a PDF using the instructions below, from this file.   Sign it digitally and upload to Moodle
 
-## How to create a PDF from Markdown
-When finished you should export to PDF using VSCode and MarkdownPDF Extension. Make sure you select no headers and no footers in the
-extension preferences before exporting to PDF.   
+date: "22 April 2024"
 
-Upload this PDF into Moodle for submission including a copy of your presentation slides.
+
 
 ## Link to GitHub Repository
 
 Flutter Application Name - MY APPLICATION NAME
-GitHub Repository - [https://github.com/ucl-casa-ce/casa0015-mobile-assessment](https://github.com/ucl-casa-ce/casa0015-mobile-assessment)
+GitHub Repository - [[https://github.com/ucl-casa-ce/casa0015-mobile-assessment](https://github.com/ucl-casa-ce/casa0015-mobile-assessment)
+](https://github.com/xxu121/casa0015-mobile-assessment/tree/main)
 
 ## Introduction to Application
 
-A brief 200 word explanation of your application and it's use.  Below create a Bibliography to code, tutorial, or plugins you've used in the project. Use this guide
-for citation - [https://www.scribbr.co.uk/referencing/harvard-website-reference/](https://www.scribbr.co.uk/referencing/harvard-website-reference/)
+Welcome to "Follow Your Heart," a revolutionary mobile application designed to empower users by providing real-time monitoring of their heart rate. 
+
+Login Page:
+
+The login page is your gateway to personalized heart rate monitoring. Users can securely log in to access their profiles, ensuring that their personal data and health metrics remain confidential. The page features a straightforward interface for entering usernames and passwords, and also includes a sign-up option for new users who need to create an account.
+
+
+Heart Rate Page:
+
+Once logged in, the heart rate page displays your current heart rate in real-time. This core feature of the app uses a clear, engaging visual gauge that categorizes heart rate zones from low to high intensity based on personalized settings. Users can toggle between normal and exercise modes to match their current activity level, making it easy to monitor and understand heart rate changes as they occur.
+
+
+Graph Page:
+
+
+The graph page provides a detailed view of heart rate trends over time. It records heart rate data every minute and displays this information on an hourly graph that refreshes every hour to ensure the data is always current. This feature is particularly useful for users looking to analyze their heart rate over the course of their daily activities or workouts, helping them identify patterns or anomalies.
+
+
+Settings Page:
+
+
+On the settings page, users can customize their experience by setting up their profile with details such as age, weight, and gender. This personalization helps tailor the heart rate monitoring and alerts to each user's specific health metrics and goals. The settings page is also where users can adjust their heart rate thresholds and other preferences to optimize the app's performance and relevance to their individual health needs.
 
 ## Biblography
 
-1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). <http://google.com>
+1. flutter/material.dart:
+Flutter Team. (n.d.). Material library for Flutter. Retrieved from https://api.flutter.dev/flutter/material/material-library.html
 
-2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s).  <http://google.com>
+
+3. mqtt_client/mqtt_client.dart:
+Dart Team. (n.d.). MQTT Client Library for Dart. Retrieved from https://pub.dev/packages/mqtt_client
+
+
+4. mqtt_client/mqtt_server_client.dart:
+Dart Team. (n.d.). MQTT Server Client Library for Dart. Retrieved from https://pub.dev/packages/mqtt_client
+
+
+5. pretty_gauge/pretty_gauge.dart:
+Flutter Community. (n.d.). Pretty Gauge Widget for Flutter. Retrieved from https://pub.dev/packages/pretty_gauge
+
+
+6. fl_chart/fl_chart.dart:
+Iman Khoshabi. (n.d.). FL Chart Library for Flutter. Retrieved from https://pub.dev/packages/fl_chart
+
+
+7. dart:async:
+Dart Team. (n.d.). Asynchronous Programming: Futures and Streams. Retrieved from https://dart.dev/codelabs/async-await
+
+
+8. dart:math:
+Dart Team. (n.d.). Math Library for Dart. Retrieved from https://api.dart.dev/stable/2.15.0/dart-math/dart-math-library.html
 
 ----
 
 ## Declaration of Authorship
 
-We, AUTHORS NAME HERE, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+We, Xincen Xu, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 
-Digitally Sign with Your name Here
+Xincen Xu
 
-ASSESSMENT DATE
+22 April 2024
