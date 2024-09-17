@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "521924832535",
+    "project_id": "calmerbeats-e3cf1",
+    "storage_bucket": "calmerbeats-e3cf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521924832535:android:6360477ff269c65e765b52",
+        "android_client_info": {
+          "package_name": "com.example.calmer_beats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDksHEBM5Jnt5JTCQK9sBBOT7aCjQEy5dI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521924832535:android:b036650c7d8eb6c4765b52",
+        "android_client_info": {
+          "package_name": "com.example.firebasetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDksHEBM5Jnt5JTCQK9sBBOT7aCjQEy5dI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521924832535:android:cf19b137acb3edb9765b52",
+        "android_client_info": {
+          "package_name": "com.mfoster0.calmerbeats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDksHEBM5Jnt5JTCQK9sBBOT7aCjQEy5dI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
