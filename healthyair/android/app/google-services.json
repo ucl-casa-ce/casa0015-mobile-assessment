@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299301176448",
+    "project_id": "healthyair-a4569",
+    "storage_bucket": "healthyair-a4569.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299301176448:android:1c2d8e9eb82332208fd265",
+        "android_client_info": {
+          "package_name": "com.example.healthyair"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHxwyFDD1yiwQFYqCWEcp8pUWGxGUVneA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

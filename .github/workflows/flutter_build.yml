@@ -1,0 +1,72 @@
+name: Flutter Build and Upload Android APK
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'microsoft'
+
+      - name: Install yq
+        uses: mikefarah/yq@v4.42.1
+
+      - name: Get pubspec version
+        id: get_flutter_app_version
+        run: |
+          cd healthyair  # 进入项目文件夹
+          VERSION=$(yq .version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' pubspec.yaml | head -n 1)
+          echo "TAG_VERSION=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create git tag
+        run: |
+          git tag "v${{ steps.get_flutter_app_version.outputs.TAG_VERSION }}"
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'  # 建议使用稳定版而非 main
+
+      - name: Get Flutter dependencies
+        run: |
+          cd healthyair  # 进入项目文件夹
+          flutter pub get
+
+      - name: Build APK Release
+        run: |
+          cd healthyair  # 进入项目文件夹
+          flutter build apk --release
+
+      - name: Build an AppBundle
+        run: |
+          cd healthyair  # 进入项目文件夹
+          flutter build appbundle --release
+
+      - name: Save APK to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-apk
+          path: healthyair/build/app/outputs/flutter-apk/*.apk
+
+      - name: Save APPBUNDLE to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-appbundle
+          path: healthyair/build/app/outputs/bundle/release/*.aab
+
+      - name: Create Github Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "healthyair/build/app/outputs/bundle/release/*.aab,healthyair/build/app/outputs/flutter-apk/*.apk"
+          tag: "v${{ steps.get_flutter_app_version.outputs.TAG_VERSION }}"
