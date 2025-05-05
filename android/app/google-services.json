@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "141335770338",
+    "project_id": "weatherfit-ad465",
+    "storage_bucket": "weatherfit-ad465.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141335770338:android:15cb5174d88fe33a19dabb",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr7TS5GxTyDGkahIOC3ynX1LkrRZARIpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

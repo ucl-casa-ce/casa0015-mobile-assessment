@@ -1,0 +1,2 @@
+D:/playground/CASA0015 - Mobile Systems/weatherfit/android/app/.cxx/Debug/4f1x382z/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/playground/CASA0015 - Mobile Systems/weatherfit/android/app/.cxx/Debug/4f1x382z/armeabi-v7a/CMakeFiles/rebuild_cache.dir

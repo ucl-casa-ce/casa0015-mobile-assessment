@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "D:\\VSFlutter\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\AndroidStudio\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\playground\\CASA0015 - Mobile Systems\\weatherfit\\android\\app\\.cxx\\Debug\\4f1x382z\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\AndroidStudio\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\playground\\CASA0015 - Mobile Systems\\weatherfit\\android\\app\\.cxx\\Debug\\4f1x382z\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

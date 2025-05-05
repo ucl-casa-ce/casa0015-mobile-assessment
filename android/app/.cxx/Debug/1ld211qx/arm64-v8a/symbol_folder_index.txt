@@ -1,0 +1,1 @@
+D:\playground\weatherfit\build\app\intermediates\cxx\Debug\1ld211qx\obj\arm64-v8a
